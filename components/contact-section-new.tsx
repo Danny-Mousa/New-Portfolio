@@ -111,7 +111,7 @@ export function ContactSection() {
               {...register("email")}
               className="w-full px-4 md:px-5 py-3 md:py-3.5 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all text-sm md:text-base"
               placeholder="john@example.com"
-              // autoComplete="nonnnew-password"
+              autoComplete="nonnnew-password"
             />
             {errors.email && (
               <p className="text-red-600">{errors.email.message}</p>
