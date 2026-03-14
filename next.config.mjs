@@ -5,7 +5,8 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    formats: ["image/avif"],
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

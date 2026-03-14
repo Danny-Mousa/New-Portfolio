@@ -1,7 +1,7 @@
 export const profileData = {
   name: "Danny Mousa",
   title: "Frontend Developer",
-  avatar: "/Danny.jfif",
+  avatar: "/Danny.avif",
   email: "dannymou2@gmail.com",
   phone: "+963 (966) 562-988",
   birthday: "October, 3, 1987",
@@ -42,23 +42,23 @@ export const aboutData = {
   ],
   testimonials: [
     {
-      avatar: "/man.png",
+      avatar: "/man.avif",
       name: "Monaf Daod",
       text: "I have worked with Danny for about a year. Danny was a fantastic person to work with, and is not only a multi-skilled and insightful colleague, but also an inspiring programmer, very good person, great employee with a very strong problem solving skills, and assists his co-workers at every opportunity. I highly recommend Danny for any team.",
     },
     {
-      avatar: "/woman.png",
+      avatar: "/woman.avif",
       name: "Michaela Finkenzeller",
       text: "I was partnered up with Danny Mousa at a Mentorship Program and we collaborate for some weeks now. Danny is a great communicator, open, sympathetic and always reliable. I am absolutely impressed with his dedication to his profession and his great motivation to constantly improve his skills. It must be a pleasure having Danny in the team.",
     },
   ],
   clients: [
-    { name: "InfoStrategic", logo: "/InfoStrategic.png" },
-    { name: "Meta Solutions", logo: "/MetaSolutions.png" },
-    { name: "Immersive Adventures", logo: "/ImmersiveAdventures.png" },
-    { name: "Turnsole Technologies", logo: "/TurnsoleTechnologies.png" },
-    { name: "Tartus Port", logo: "/TartusPort.png" },
-    { name: "Mercato B2B", logo: "/MercatoB2B.png" },
+    { name: "InfoStrategic", logo: "/InfoStrategic.avif" },
+    { name: "Meta Solutions", logo: "/MetaSolutions.avif" },
+    { name: "Immersive Adventures", logo: "/ImmersiveAdventures.avif" },
+    { name: "Turnsole Technologies", logo: "/TurnsoleTechnologies.avif" },
+    { name: "Tartus Port", logo: "/TartusPort.avif" },
+    { name: "Mercato B2B", logo: "/MercatoB2B.avif" },
   ],
 };
 
@@ -160,7 +160,7 @@ export const portfolioData = {
     {
       title: "Mercato Web App",
       category: "web app",
-      image: "/MercatoWebApp_Project.png",
+      image: "/MercatoWebApp.avif",
       description: "A Pharmaceutical B2B Marketplace solution",
       tech: ["Next.js", "React.js", "TypeScript"],
       liveUrl: "https://mercato-pos.com",
@@ -168,7 +168,7 @@ export const portfolioData = {
     {
       title: "Immersive Adventures SAS",
       category: "web app",
-      image: "/ImmersiveAdventures_Project.png",
+      image: "/ImmersiveAdventures_Project.avif",
       description: "A 3D E-Learning Authoring Tool Web App",
       tech: ["Next.js", "React.js", "TypeScript"],
       liveUrl: "https://example.com",
@@ -176,7 +176,7 @@ export const portfolioData = {
     {
       title: "Emirates Policy Center (EPC)",
       category: "website",
-      image: "/EmiratesPolicyCenter_Project.png",
+      image: "/EmiratesPolicyCenter.avif",
       description: "A News Website, based in Abu Dhabi, United Arab Emirates",
       tech: ["Next.js", "React.js", "Material UI"],
       liveUrl: "https://epc.ae",
@@ -184,7 +184,7 @@ export const portfolioData = {
     {
       title: "RAK Exhibition Center",
       category: "website",
-      image: "/RAKExhibitionCenter_Project.png",
+      image: "/RAKExhibitionCenter.avif",
       description:
         "A website offering services for the Ras Al Khaimah Exhibition City",
       tech: ["Next.js", "React", "Material UI"],
@@ -193,7 +193,7 @@ export const portfolioData = {
     {
       title: "RAK Chamber",
       category: "website",
-      image: "/RAKChamber_Project.png",
+      image: "/RAKChamber.avif",
       description:
         "A website offering services for the RAK Chamber of Commerce and Industry",
       tech: ["Next.js", "React", "Material UI"],
@@ -202,7 +202,7 @@ export const portfolioData = {
     {
       title: "Russail Water",
       category: "website",
-      image: "/RussailWater_Project.png",
+      image: "/RussailWater.avif",
       description: "A Drinking Water website",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://russailwater.ae",
@@ -210,7 +210,7 @@ export const portfolioData = {
     {
       title: "Stiftung IBS",
       category: "website",
-      image: "/StiftungIBS_Project.png",
+      image: "/StiftungIBS.avif",
       description: "A Website for IBS Foundation",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://www.ibs-laubusch.de",
