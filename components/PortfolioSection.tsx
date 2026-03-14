@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
-import { ExternalLink, Eye } from "lucide-react";
 import { portfolioData } from "@/lib/portfolio-data";
+import { Eye } from "lucide-react";
 import Image from "next/image";
+import { useState } from "react";
 
 interface PortfolioSectionProps {
   data?: typeof portfolioData;

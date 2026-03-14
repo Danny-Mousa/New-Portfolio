@@ -1,6 +1,7 @@
 "use client";
 
 import AboutSectionSkeleton from "@/components/skeletons/AboutSectionSkeleton";
+import PortfolioSectionSkeleton from "@/components/skeletons/PortfolioSectionSkeleton";
 import { ProfileSidebarSkeleton } from "@/components/skeletons/ProfileSidebarSkeleton";
 import ResumeSectionSkeleton from "@/components/skeletons/ResumeSectionSkeleton";
 import { ThemeToggle } from "@/components/ThemeToggle";
@@ -29,6 +30,7 @@ const PortfolioSection = dynamic(
   () => import("../components/PortfolioSection"),
   {
     ssr: false,
+    loading: () => <PortfolioSectionSkeleton />,
   },
 );
 const BlogSection = dynamic(() => import("../components/BlogSection"), {
