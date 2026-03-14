@@ -1,7 +1,7 @@
 "use client";
 
-import { AboutSection } from "@/components/AboutSection";
 import { ProfileSidebar } from "@/components/ProfileSidebar";
+import AboutSectionSkeleton from "@/components/skeletons/AboutSectionSkeleton";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   aboutData,
@@ -12,6 +12,10 @@ import {
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
+const AboutSection = dynamic(() => import("../components/AboutSection"), {
+  ssr: false,
+  loading: () => <AboutSectionSkeleton />,
+});
 const ResumeSection = dynamic(() => import("../components/ResumeSection"), {
   ssr: false,
 });

@@ -1,5 +1,5 @@
-import { PenTool, Code, Smartphone, Zap } from "lucide-react";
 import { aboutData } from "@/lib/portfolio-data";
+import { Code, PenTool, Smartphone, Zap } from "lucide-react";
 import Image from "next/image";
 
 const iconMap = {
@@ -13,7 +13,7 @@ interface AboutSectionProps {
   data?: typeof aboutData;
 }
 
-export function AboutSection({ data = aboutData }: AboutSectionProps) {
+export default function AboutSection({ data = aboutData }: AboutSectionProps) {
   return (
     <div className="space-y-8 md:space-y-10">
       {/* About Me */}

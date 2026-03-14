@@ -1,6 +1,5 @@
-import { Mail, Phone, Calendar, MapPin } from "lucide-react";
-import { Github, Linkedin } from "lucide-react";
 import { profileData } from "@/lib/portfolio-data";
+import { Calendar, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 
 interface ProfileSidebarProps {
