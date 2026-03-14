@@ -1,8 +1,8 @@
 "use client";
 
-import { AboutSection } from "@/components/about-section";
-import { ProfileSidebar } from "@/components/profile-sidebar";
-import { ThemeToggle } from "@/components/theme-toggle";
+import { AboutSection } from "@/components/AboutSection";
+import { ProfileSidebar } from "@/components/ProfileSidebar";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import {
   aboutData,
   portfolioData,
@@ -12,24 +12,21 @@ import {
 import dynamic from "next/dynamic";
 import { useState } from "react";
 
-const ResumeSection = dynamic(() => import("../components/resume-section"), {
+const ResumeSection = dynamic(() => import("../components/ResumeSection"), {
   ssr: false,
 });
 const PortfolioSection = dynamic(
-  () => import("../components/portfolio-section"),
+  () => import("../components/PortfolioSection"),
   {
     ssr: false,
   },
 );
-const BlogSection = dynamic(() => import("../components/blog-section"), {
+const BlogSection = dynamic(() => import("../components/BlogSection"), {
   ssr: false,
 });
-const ContactSection = dynamic(
-  () => import("../components/contact-section-new"),
-  {
-    ssr: false,
-  },
-);
+const ContactSection = dynamic(() => import("../components/ContactSection"), {
+  ssr: false,
+});
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState("about");
