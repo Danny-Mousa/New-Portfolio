@@ -171,7 +171,7 @@ export const portfolioData = {
       image: "/ImmersiveAdventures_Project.avif",
       description: "A 3D E-Learning Authoring Tool Web App",
       tech: ["Next.js", "React.js", "TypeScript"],
-      liveUrl: "https://example.com",
+      liveUrl: "",
     },
     {
       title: "Emirates Policy Center (EPC)",

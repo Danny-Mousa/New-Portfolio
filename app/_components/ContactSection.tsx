@@ -5,6 +5,7 @@ import { Loader2, Send } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import { z } from "zod";
+import SectionTitle from "./SectionTitle";
 
 interface FormData {
   name: string;
@@ -67,12 +68,7 @@ export default function ContactSection() {
 
   return (
     <div className="space-y-6 md:space-y-8">
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          Contact
-        </h2>
-        <div className="w-10 h-1 bg-accent rounded-full mb-6" />
-      </div>
+      <SectionTitle title="Contact" />
 
       <form
         onSubmit={handleSubmit(onSubmit)}

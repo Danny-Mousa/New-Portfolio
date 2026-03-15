@@ -1,6 +1,7 @@
 import { aboutData } from "@/lib/portfolio-data";
 import { Code, PenTool, Smartphone, Zap } from "lucide-react";
 import Image from "next/image";
+import SectionTitle from "./SectionTitle";
 
 const iconMap = {
   Code,
@@ -18,10 +19,7 @@ export default function AboutSection({ data = aboutData }: AboutSectionProps) {
     <div className="space-y-8 md:space-y-10">
       {/* About Me */}
       <div>
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          About Me
-        </h2>
-        <div className="w-10 h-1 bg-accent rounded-full mb-6" />
+        <SectionTitle title="About Me" />
         <div className="space-y-4 text-sm md:text-base text-muted-foreground leading-relaxed">
           {data.description.map((paragraph, index) => (
             <p key={index} className="whitespace-pre-wrap">

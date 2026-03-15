@@ -1,5 +1,6 @@
 import { resumeData } from "@/lib/portfolio-data";
 import { BookOpen, Briefcase, FileStack } from "lucide-react";
+import SectionTitle from "./SectionTitle";
 
 interface ResumeSectionProps {
   data?: typeof resumeData;
@@ -10,12 +11,7 @@ export default function ResumeSection({
 }: ResumeSectionProps) {
   return (
     <div className="space-y-8 md:space-y-12">
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          Resume
-        </h2>
-        <div className="w-10 h-1 bg-accent rounded-full mb-7" />
-      </div>
+      <SectionTitle title="My Resume" />
       {/* Skills */}
       <div>
         <div className="flex items-center gap-2 md:gap-3 mb-6">

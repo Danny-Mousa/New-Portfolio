@@ -1,6 +1,8 @@
 // import { Calendar, Clock, ArrowRight } from "lucide-react";
 // import { blogData } from "@/lib/portfolio-data";
 
+import SectionTitle from "./SectionTitle";
+
 // interface BlogSectionProps {
 //   data?: typeof blogData | undefined
 // }
@@ -10,10 +12,7 @@ export default function BlogSection() {
   return (
     <div className="space-y-6 md:space-y-8 h-[50vh]">
       <div>
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
-          Blog
-        </h2>
-        <div className="w-10 h-1 bg-accent rounded-full mb-6" />
+        <SectionTitle title="Blog" />
       </div>
       <div className="flex items-center justify-center h-3/4 text-accent text-2xl md:text-3xl ">
         Comming Soon ...
