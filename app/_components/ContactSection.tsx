@@ -8,21 +8,21 @@ import { z } from "zod";
 import SectionTitle from "./SectionTitle";
 
 interface FormData {
-  name: string;
-  email: string;
-  message: string;
+  uName: string;
+  uEmail: string;
+  uMessage: string;
 }
 
 const contactSchema = z.object({
-  name: z
+  uName: z
     .string()
     .min(1, "Name is required")
     .refine(
       (val) => val.trim().split(/\s+/).length >= 2,
       "Please enter your full name (first and last name)",
     ),
-  email: z.string().email("Invalid email address"),
-  message: z.string().min(1, "Message is required"),
+  uEmail: z.string().email("Invalid email address"),
+  uMessage: z.string().min(1, "Message is required"),
 });
 
 export default function ContactSection() {
@@ -37,8 +37,6 @@ export default function ContactSection() {
   });
 
   const onSubmit = async (data: FormData) => {
-    console.log("onSubmit called with data:", data);
-
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -85,13 +83,13 @@ export default function ContactSection() {
             <input
               type="text"
               id="name"
-              {...register("name")}
+              {...register("uName")}
               className="w-full px-4 md:px-5 py-3 md:py-3.5 bg-secondary  border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all text-sm md:text-base"
               placeholder="John Doe"
               // autoComplete="new-password"
             />
-            {errors.name && (
-              <p className="text-red-600">{errors.name.message}</p>
+            {errors.uName && (
+              <p className="text-red-600">{errors.uName.message}</p>
             )}
           </div>
           <div>
@@ -104,13 +102,13 @@ export default function ContactSection() {
             <input
               type="email"
               id="email"
-              {...register("email")}
+              {...register("uEmail")}
               className="w-full px-4 md:px-5 py-3 md:py-3.5 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all text-sm md:text-base"
               placeholder="john@example.com"
               autoComplete="nonnnew-password"
             />
-            {errors.email && (
-              <p className="text-red-600">{errors.email.message}</p>
+            {errors.uEmail && (
+              <p className="text-red-600">{errors.uEmail.message}</p>
             )}
           </div>
         </div>
@@ -124,13 +122,13 @@ export default function ContactSection() {
           </label>
           <textarea
             id="message"
-            {...register("message")}
+            {...register("uMessage")}
             rows={6}
             className="w-full px-4 md:px-5 py-3 md:py-3.5 bg-secondary border border-border rounded-xl text-foreground placeholder:text-muted-foreground focus:border-accent focus:ring-2 focus:ring-accent/20 focus:outline-none transition-all resize-none text-sm md:text-base"
             placeholder="Write your message here..."
           />
-          {errors.message && (
-            <p className="text-red-600">{errors.message.message}</p>
+          {errors.uMessage && (
+            <p className="text-red-600">{errors.uMessage.message}</p>
           )}
         </div>
 

@@ -6,8 +6,8 @@ import nodemailer from "nodemailer";
 export async function POST(req: NextRequest) {
   if (req.method === "POST") {
     try {
-      const { name, email, message } = await req.json();
-      if (!name || !email || !message) {
+      const { uName, uEmail, uMessage } = await req.json();
+      if (!uName || !uEmail || !uMessage) {
         return new NextResponse(JSON.stringify({ error: "Missing fields" }), {
           status: 400,
           headers: { "Content-Type": "application/json" },
@@ -26,10 +26,10 @@ export async function POST(req: NextRequest) {
       });
 
       await transporter.sendMail({
-        from: email,
+        from: uEmail,
         to: process.env.EMAIL_USER,
-        subject: `New Contact, Form Submission from ${name}`,
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+        subject: `New Contact, Form Submission from ${uName}`,
+        text: `Name: ${uName}\nEmail: ${uEmail}\nMessage: ${uMessage}`,
       });
       return new NextResponse(JSON.stringify({ success: true }), {
         status: 200,
