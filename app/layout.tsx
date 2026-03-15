@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import PortfolioNavigator from "./_components/PortfolioNavigator";
-import ProfileSidebar from "./_components/ProfileSidebar";
+import PortfolioSidebar from "./_components/PortfolioSidebar";
 import { ThemeToggle } from "./_components/ThemeToggle";
 import { Toaster } from "./_components/ui/sonner";
 import "./globals.css";
@@ -68,7 +68,7 @@ export default function RootLayout({
           </div>
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col lg:flex-row gap-3 sm:gap-4 md:gap-6">
-              <ProfileSidebar />
+              <PortfolioSidebar />
               <main className="flex-1 bg-card rounded-xl md:rounded-2xl border border-border overflow-hidden">
                 <PortfolioNavigator />
                 <div className="p-4 sm:p-6 md:p-8 lg:p-10">{children}</div>

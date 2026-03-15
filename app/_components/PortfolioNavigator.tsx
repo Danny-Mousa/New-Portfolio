@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { Dispatch, SetStateAction } from "react";
 
 const sections = [
   { title: "about", href: "/about-me" },

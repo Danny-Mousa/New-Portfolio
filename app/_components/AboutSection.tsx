@@ -5,12 +5,12 @@ import Services from "./Services";
 import CardsSkeleton from "./skeletons/CardsSkeleton";
 
 const Clients = dynamic(() => import("./Clients"), {
-  ssr: true,
+  ssr: false,
   loading: () => <CardsSkeleton />,
 });
 
 const Testimonials = dynamic(() => import("./Testimonials"), {
-  ssr: true,
+  ssr: false,
   loading: () => <CardsSkeleton />,
 });
 
