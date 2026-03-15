@@ -2,10 +2,6 @@ import { profileData } from "@/lib/portfolio-data";
 import { Calendar, Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import Image from "next/image";
 
-interface ProfileSidebarProps {
-  data?: typeof profileData;
-}
-
 export default function ProfileSidebar() {
   const data = profileData;
   return (
