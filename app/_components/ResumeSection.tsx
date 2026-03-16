@@ -26,7 +26,7 @@ export default function ResumeSection() {
                   {category.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-secondary text-xs md:text-sm text-muted-foreground mr-1 py-1 px-3 rounded-4xl bg-accent"
+                      className="text-secondary text-xs md:text-sm text-muted-foreground mr-1 mb-1 py-1 px-3 rounded-4xl bg-accent"
                     >
                       {skill}
                     </span>
