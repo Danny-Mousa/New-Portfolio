@@ -3,7 +3,7 @@ export function ProfileSidebarSkeleton() {
     <aside className="w-full lg:w-80 bg-card rounded-2xl border border-border p-4 md:p-6 lg:sticky lg:top-8 h-fit">
       {/* Profile Image */}
       <div className="flex flex-col items-center">
-        <div className="relative w-24 h-24 md:w-32 md:h-32 mb-4 md:mb-6">
+        <div className="relative w-24 h-24 md:w-[160px] md:h-[150px] mb-4">
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent/20 via-accent/5 to-transparent animate-pulse-slow" />
           <div className="absolute inset-[2px] rounded-3xl bg-secondary overflow-hidden">
             {/* Image placeholder - just a colored div */}
