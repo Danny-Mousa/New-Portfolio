@@ -1,4 +1,5 @@
 import { resumeData } from "@/lib/portfolio-data";
+import ItemDetails from "./ItemDetails";
 import SectionTitle from "./SectionTitle";
 
 export default function ResumeSection() {
@@ -40,24 +41,7 @@ export default function ResumeSection() {
         </div>
         <div className="space-y-4">
           {resumeData.education.map((item, index) => (
-            <div
-              key={index}
-              className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0"
-            >
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
-              <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">
-                {item.title}
-              </h4>
-              <p className="text-xs md:text-sm text-accent mb-2">
-                {item.location}
-              </p>
-              <p className="text-xs md:text-sm text-accent mb-2">
-                {item.period}
-              </p>
-              <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
-                {item.description}
-              </p>
-            </div>
+            <ItemDetails key={index} item={item} />
           ))}
         </div>
       </div>
@@ -69,27 +53,7 @@ export default function ResumeSection() {
         </div>
         <div className="space-y-4">
           {resumeData.experience.map((item, index) => (
-            <div
-              key={index}
-              className="relative pl-5 md:pl-6 pb-6 border-l-2 border-border last:pb-0"
-            >
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-accent" />
-              <h4 className="text-base md:text-lg font-semibold text-foreground mb-2">
-                {item.title}
-              </h4>
-              <h4 className="text-xs md:text-sm text-foreground mb-2">
-                {item.company}
-              </h4>
-              <p className="text-xs md:text-sm text-accent mb-2">
-                {item.location}
-              </p>
-              <p className="text-xs md:text-sm text-accent mb-2">
-                {item.period}
-              </p>
-              <p className="text-xs md:text-sm text-muted-foreground leading-relaxed whitespace-pre-wrap">
-                {item.description}
-              </p>
-            </div>
+            <ItemDetails key={index} item={item} />
           ))}
         </div>
       </div>

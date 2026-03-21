@@ -66,14 +66,14 @@ export const resumeData = {
   education: [
     {
       title: "Bachelor's degree of Communications and Electronics Engineering",
-      location: "Tishreen Unversity, Lattakia - Syria",
+      organization: "Tishreen Unversity, Lattakia - Syria",
       period: "2006 — 2012",
       description:
         "Studied Computer Science with a focus on Telecommunication, and Electronic technologies and software engineering principles.",
     },
     {
       title: "Front-End Web Developer Nanodegree",
-      location: "Udacity - online",
+      organization: "Udacity - online",
       period: "2019",
       description:
         "Intensive program covering modern JavaScript frameworks, responsive design, and UX principles.",
@@ -82,7 +82,7 @@ export const resumeData = {
   experience: [
     {
       title: "Senior React Developer - Full Time",
-      company: "Turnsole Technologies",
+      organization: "Turnsole Technologies",
       location: "Remote (London - UK)",
       period: "May 2024 - Mar 2026",
       description: `• Reduced Largest Contentful Paint (LCP) by 45% and peak memory usage by 30% by architecting performance initiatives including code splitting, dynamic imports, and AbortController implementation.
@@ -96,7 +96,7 @@ export const resumeData = {
     },
     {
       title: "Frontend Developer - Part Time",
-      company: "Immersive Adventures SAS",
+      organization: "Immersive Adventures SAS",
       location: "Remote (Paris - France)",
       period: "Jan 2024 - May 2024",
       description: `• Spearheaded the development of an e-learning authoring tool that enabled non-technical users to create interactive, immersive courses with zero programming skills required, reducing course development time by 50%.
@@ -107,7 +107,7 @@ export const resumeData = {
     },
     {
       title: "Front End Web Developer - Full Time",
-      company: "Meta Solutions",
+      organization: "Meta Solutions",
       location: "Remote (UAE)",
       period: "Aug 2022 - Jan 2024",
       description: `• Spearheaded the development of a custom survey generator system (admin + user interface) and delivered 2 client websites (Russail & IBS) with 100% functionality compliance, boosting client efficiency by 35%.
@@ -122,7 +122,7 @@ export const resumeData = {
     },
     {
       title: "Frontend Developer - Part Time",
-      company: "General Company For Tartus Port",
+      organization: "General Company For Tartus Port",
       location: "On site",
       period: "Mar 2020 - Jan 2024",
       description: `• Maintained as a part-time, on-site commitment alongside full-time remote roles, averaging 20 hours/week.
@@ -133,7 +133,7 @@ export const resumeData = {
     },
     {
       title: "Frontend Web Developer - Full Time",
-      company: "Info Strategic",
+      organization: "Info Strategic",
       location: "Remote (UAE)",
       period: "Jan 2021 - Jan 2022",
       description: `• Led development for three high-profile projects, with clean, responsive codebases for RAK Chamber, RAK Exhibition City, and Emirates Policy Center (EPC) projects.
