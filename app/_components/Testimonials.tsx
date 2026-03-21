@@ -1,11 +1,10 @@
 import { aboutData } from "@/lib/portfolio-data";
+import SectionTitle from "./SectionTitle";
 
 function Testimonials() {
   return (
     <>
-      <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
-        Testimonials
-      </h3>
+      <SectionTitle title="Testimonials" />
       <div className="relative overflow-hidden">
         <div className="flex gap-3 md:gap-4 animate-marquee">
           {[...aboutData.testimonials, ...aboutData.testimonials].map(

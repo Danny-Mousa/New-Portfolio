@@ -11,9 +11,8 @@ function Navigator() {
         <Link
           key={section.title}
           href={section.href}
-          // className={` cursor-pointer px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium capitalize transition-colors whitespace-nowrap flex-shrink-0`}
           className={` cursor-pointer px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-medium capitalize transition-colors whitespace-nowrap flex-shrink-0 ${
-            pathname === section.href
+            [section.href, section.href2].includes(pathname)
               ? "text-foreground bg-accent/10"
               : "text-muted-foreground hover:text-foreground hover:bg-secondary"
           }`}

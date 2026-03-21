@@ -1,5 +1,6 @@
 import { aboutData } from "@/lib/portfolio-data";
 import { Code, PenTool, Smartphone, Zap } from "lucide-react";
+import SectionTitle from "./SectionTitle";
 
 const iconMap = {
   Code,
@@ -11,9 +12,7 @@ const iconMap = {
 function Services() {
   return (
     <>
-      <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
-        What I'm Doing
-      </h3>
+      <SectionTitle title="What I'm Doing" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
         {aboutData.services.map((service, index) => {
           const IconComponent = iconMap[service.icon as keyof typeof iconMap];

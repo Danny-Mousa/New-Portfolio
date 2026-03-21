@@ -1,12 +1,11 @@
 import { aboutData } from "@/lib/portfolio-data";
 import Image from "next/image";
+import SectionTitle from "./SectionTitle";
 
 function Clients() {
   return (
     <>
-      <h3 className="text-xl md:text-2xl font-bold text-foreground mb-6">
-        Clients
-      </h3>
+      <SectionTitle title="Clients" />
       <div className="relative overflow-hidden pb-4">
         <div className="flex gap-4 md:gap-6 animate-marquee-slow">
           {[...aboutData.clients, ...aboutData.clients].map((client, index) => (
