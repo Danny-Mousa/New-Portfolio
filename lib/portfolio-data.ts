@@ -165,6 +165,7 @@ export const portfolioData = {
       description: "A Pharmaceutical B2B Marketplace solution",
       tech: ["Next.js", "React.js", "TypeScript"],
       liveUrl: "https://mercato-pos.com",
+      github_url: "",
     },
     {
       title: "Immersive Adventures SAS",
@@ -174,6 +175,7 @@ export const portfolioData = {
       description: "A 3D E-Learning Authoring Tool Web App",
       tech: ["Next.js", "React.js", "TypeScript"],
       liveUrl: "",
+      github_url: "",
     },
     {
       title: "Emirates Policy Center (EPC)",
@@ -183,6 +185,7 @@ export const portfolioData = {
       description: "A News Website, based in Abu Dhabi, United Arab Emirates",
       tech: ["Next.js", "React.js", "Material UI"],
       liveUrl: "https://epc.ae",
+      github_url: "",
     },
     {
       title: "RAK Exhibition Center",
@@ -193,6 +196,7 @@ export const portfolioData = {
         "A website offering services for the Ras Al Khaimah Exhibition City",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://www.rakexpo.ae/en/home",
+      github_url: "",
     },
     {
       title: "RAK Chamber",
@@ -203,6 +207,7 @@ export const portfolioData = {
         "A website offering services for the RAK Chamber of Commerce and Industry",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://www.rakchamber.ae/en/home",
+      github_url: "",
     },
     {
       title: "Russail Water",
@@ -212,6 +217,7 @@ export const portfolioData = {
       description: "A Drinking Water website",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://russailwater.ae",
+      github_url: "",
     },
     {
       title: "Stiftung IBS",
@@ -221,6 +227,7 @@ export const portfolioData = {
       description: "A Website for IBS Foundation",
       tech: ["Next.js", "React", "Material UI"],
       liveUrl: "https://www.ibs-laubusch.de",
+      github_url: "",
     },
     {
       title: "Emotion Detector App",
@@ -231,6 +238,7 @@ export const portfolioData = {
         "An emotion detection AI-powered app, using: IBM Watson model, and Flask",
       tech: ["Python", "Generative AI", "Flask"],
       liveUrl: "https://github.com/Danny-Mousa/Emotion-Detector.git",
+      github_url: "",
     },
     {
       title: "Image Captioning App",
@@ -241,6 +249,7 @@ export const portfolioData = {
         "An image captioning AI-powered app, using: BLIP model and Gradio",
       tech: ["Python", "Generative AI", "Hugging Face", "Gradio"],
       liveUrl: "https://huggingface.co/spaces/dannymousa/image_captioning_app",
+      github_url: "https://github.com/Danny-Mousa/image_captioning_app.git",
     },
     {
       title: "ChatGPT-like Chatbot App",
@@ -249,7 +258,8 @@ export const portfolioData = {
       image: "/chatbot.avif",
       description: "A chatbot AI-powered app, using: GPT-3 model and Gradio",
       tech: ["Python", "Generative AI", "Hugging Face", "Gradio"],
-      liveUrl: "https://github.com/Danny-Mousa/chatbot.git",
+      liveUrl: "",
+      github_url: "https://github.com/Danny-Mousa/chatbot.git",
     },
     {
       title: "Voice Assistant App",
@@ -259,7 +269,19 @@ export const portfolioData = {
       description:
         "A voice assistant AI-powered app, using: GPT-3 & IBM Watson models and Flask",
       tech: ["Python", "Generative AI", "Hugging Face", "Flask"],
-      liveUrl: "https://github.com/Danny-Mousa/voice_assisstant.git",
+      liveUrl: "",
+      github_url: "https://github.com/Danny-Mousa/voice_assisstant.git",
+    },
+    {
+      title: "Audio Transcription App",
+      category: "ai",
+      type: "AI Solutions",
+      image: "/audio_transcription.avif",
+      description:
+        "An audio transcription AI-powered app, using: Whisper, Llama3, & LongChain models and Gradio",
+      tech: ["Python", "Whisper", "Llama3", "Gradio"],
+      liveUrl: "",
+      github_url: "https://github.com/Danny-Mousa/audio-transcription.git",
     },
   ],
 };
