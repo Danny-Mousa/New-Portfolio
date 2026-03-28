@@ -39,6 +39,12 @@ export const aboutData = {
       description:
         "Creating robust APIs and server-side solutions with Node.js and Flask.",
     },
+    {
+      icon: "BrainCircuit",
+      title: "AI Solutions - Basics",
+      description:
+        "Developing AI-powered apps using Python, Flask, Hugging Face, and IBM Watson.",
+    },
   ],
   testimonials: [
     {
