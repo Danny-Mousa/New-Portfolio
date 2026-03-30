@@ -289,6 +289,19 @@ export const portfolioData = {
       liveUrl: "",
       github_url: "https://github.com/Danny-Mousa/audio-transcription.git",
     },
+    {
+      title: "Voice-Enabled AI Translator Assistant App",
+      category: "ai",
+      type: "AI Solutions",
+      image: "/audio_transcription.avif",
+      description:
+        "An audio transcription AI-powered app, using: Whisper, Llama3, & LongChain models and Gradio",
+      tech: ["Python", "Whisper", "Llama3", "Gradio"],
+      liveUrl:
+        "https://ai-personal-assistant.xs6r134s1i6.us-east.codeengine.appdomain.cloud/",
+      github_url:
+        "https://github.com/Danny-Mousa/voice_enabled_AI_translator_assistant.git",
+    },
   ],
 };
 
@@ -328,6 +341,14 @@ during the participating in the One Million Arab Coders Initiative, presented by
     },
   ],
   certifications: [
+    {
+      title: "Building Generative AI-Powered Applications with Python",
+      organization: "IBM",
+      period: "Mar, 2026",
+      description:
+        "Skills: Flask, LLM, RAG, LangChain, IBM Cloud, and Hugging Face",
+      url: "https://www.coursera.org/account/accomplishments/records/U7ANF91PTOGS",
+    },
     {
       title: "Developing AI Applications with Python and Flask",
       organization: "IBM",
