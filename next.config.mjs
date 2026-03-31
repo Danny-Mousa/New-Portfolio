@@ -7,6 +7,15 @@ const nextConfig = {
     unoptimized: true,
     formats: ["image/avif"],
   },
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/about-me",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
